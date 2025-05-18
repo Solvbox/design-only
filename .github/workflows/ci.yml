@@ -30,7 +30,7 @@ jobs:
 
       # 7. Cache Expo CLI (optional)
       - name: Cache Expo CLI
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.npm/global
           key: ${{ runner.os }}-expo-cli-${{ hashFiles('**/package-lock.json') }}
